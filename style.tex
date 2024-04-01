@@ -1,0 +1,62 @@
+\mode<presentation> { \usetheme{Rochester} }
+\setbeamersize{text margin left=0.6cm,text margin right=0.6cm}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{
+  \leavevmode
+  \pgfsetfillopacity{0.7}
+  %%\begin{beamercolorbox}[wd=\paperwidth*0.8,dp=2ex]{subsection in head/foot}
+    \usebeamerfont{subsection in head/foot}
+    \begin{columns}[T]
+      \begin{column}{.75\paperwidth}
+        \begin{beamercolorbox}[wd=\columnwidth,dp=2ex]{subsection in head/foot}
+        \vskip4ex
+        \begin{flushright}
+          \usebeamercolor{title in headline}{
+            \color{fg}\textbf{\huge{\pgfsetfillopacity{1} \inserttitle \hspace*{1cm} }}\\[1ex]
+          }
+          \usebeamercolor{author in headline}{
+            \color{fg}\Large{\pgfsetfillopacity{1} \insertauthor \hspace*{1cm} }\\[1ex]
+          }
+          \usebeamercolor{institute in headline}{
+            \color{fg}\Large{\pgfsetfillopacity{1}  \insertinstitute \hspace*{1cm} }\\[1ex]
+          }
+        \end{flushright}
+        \vskip4ex
+        \end{beamercolorbox}
+      \end{column}
+
+      \begin{column}{.25\paperwidth}
+        \vskip0.5cm
+        \begin{flushleft}
+          \includegraphics[width=.7\columnwidth]{figures/logo4.png}
+        \end{flushleft}
+        \begin{flushleft}
+          \includegraphics[width=.40\linewidth]{figures/logo2.pdf}
+          \includegraphics[width=.40\linewidth]{figures/logo3.png}
+        \end{flushleft}
+      \end{column}
+    \end{columns}
+    \vskip0cm
+  %%\end{beamercolorbox}
+%  \begin{beamercolorbox}[wd=\paperwidth]{section in head/foot}
+%    \rule{0pt}{2pt}
+%  \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}{
+  \leavevmode
+  \begin{beamercolorbox}[leftskip=1cm,rightskip=1cm]{subsection in head/foot}
+    \usebeamerfont{section in head/foot}
+    \vskip1ex
+    \normalsize
+    Thomas Spielauer
+    \hfill
+    Technische Universität Wien, Atominstitut
+    \hfill
+    thomas.spielauer@tuwien.ac.at
+  \end{beamercolorbox}
+%\begin{beamercolorbox}[wd=\paperwidth]{section in head/foot}
+  %\rule{0pt}{2pt}
+%\end{beamercolorbox}
+}
+
