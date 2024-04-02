@@ -43,6 +43,141 @@
   \end{block}
   \begin{columns}[T]
     \begin{column}{.49\linewidth}
+	\begin{block}{\Large Electron Spin Resonance with Modulated Electron Beams}
+		Our experiment resembles an electron spin resonance experiment. In contrast to
+		other electron spin resonance setups where systems are excited using microwaves
+		we use the \textit{non-radiative electro-magnetic near-field} of an modulated
+		electron beam
+
+		\vspace{1cm}
+
+		\begin{columns}
+			\begin{column}{0.45\columnwidth}
+				\includegraphics[width=\columnwidth]{./figures/qklystron.pdf}
+			\end{column}
+			\begin{column}{0.45\columnwidth}
+				\begin{itemize}	
+					\item Classical EPR requires large field gradients for spatial resolution
+					\item Currently resolutions down to $10 \mu m$ are possible in classical systems
+				\end{itemize}
+
+				Proposed experiment [1]:
+
+				\begin{itemize}
+					\item Coherent control of spin systems
+					\item Fundamental near-field scales $\frac{1}{r}$
+					\item Path to nanoscale: $1^{st}$ harmonic scales $\frac{1}{r^2}$, $2^{nd}$ harmonic scales $\frac{1}{r^3}$
+					\item Proposed addressing systems at 30nm spacing
+				\end{itemize}
+			\end{column}
+		\end{columns}
+	\end{block}
+	\begin{block}{\Large Customized Philips XL30 ESEM}
+		We customized an scanning electron microscope from the Institute of Material Science and Technology at TU Vienna (disassembled, transported and reassembled) as our experimental platform to fit our special requirements to perform EPR experiments.
+		\vspace{1cm}
+
+		\begin{columns}
+			\begin{column}{0.45\columnwidth}
+				\includegraphics[width=\columnwidth]{./figures/sematati2_2.png}
+			\end{column}
+			\begin{column}{0.45\columnwidth}
+				\begin{itemize}
+					\item Philips XL30 ESEM from 1993
+					\item Up to 30 kV
+					\item Magnification up to 500.00x, due to column tuning for high current now $\approx$ 100-500x
+					\item Tungsten filament $\to$ high current capability
+					\item Using $800 \mu m$ final aperture
+					\item Beam current: $2 - 20 \mu A$ stable
+					\item We are able to modify the machine
+				\end{itemize}
+			\end{column}
+		\end{columns}
+		\vspace{1cm}
+		\begin{columns}
+			\begin{column}{0.225\columnwidth}
+				\begin{itemize}
+					\item Custom flange adapters to ConFlat system
+					\item Front door with CF64 flanges to gain more space
+					\item Custom column attachment system
+					\item Python based remote control via \texttt{pyxl30}
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.225\columnwidth}
+				\includegraphics[width=\columnwidth]{./figures/flanges02.jpg}
+			\end{column}
+			\begin{column}{0.45\columnwidth}
+				\includegraphics[width=\columnwidth]{./figures/beamcurrents.png}
+			\end{column}
+		\end{columns}
+	\end{block}
+
+%%	\begin{block}{\Large Custom PCB beam modulator: $1^{st}$ iteration}
+%%		\begin{columns}
+%%			\begin{column}{0.45\columnwidth}
+%%				
+%%			\end{column}
+%%			\begin{column}{0.45\columnwidth}
+%%				\begin{itemize}
+%%					\item Used BSE detector mount
+%%					\item Single layer coplanar waveguide
+%%					\item Allowed beam modulation
+%%					\item Due to
+%%				\end{itemize}
+%%			\end{column}
+%%		\end{columns}
+%%	\end{block}
+
+	\begin{block}{\Large Custom PCB based beam modulator}
+		\begin{columns}
+			\begin{column}{0.45\columnwidth}
+				\begin{itemize}
+					\item Cannot use column deflection coils (kHz range)
+					\item Require up to 500 MHz modulation frequency
+					\item Using deflection as in our other experiments
+					\item Other option would be bunching
+					\item Deflector based on modular PCB stack
+					\item Attaches to column attachment system
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.45\columnwidth}
+				\includegraphics[width=0.49\columnwidth]{./figures/kicker2_02.jpg}
+				\includegraphics[width=0.49\columnwidth]{./figures/colattach03.png}
+			\end{column}
+		\end{columns}
+		\vspace{1cm}
+		\begin{columns}
+			\begin{column}{0.45\columnwidth}
+				\includegraphics[width=0.49\columnwidth]{./figures/kickertest01.png}
+				\includegraphics[width=0.49\columnwidth]{./figures/kickertest02.png}
+			\end{column}
+			\begin{column}{0.45\columnwidth}
+				\begin{itemize}
+					\item Modulating with up to 32 dBm 
+					\item Modulator performs as modeled
+					\item Measured by spread of visible features via imaging
+				\end{itemize}
+			\end{column}
+		\end{columns}
+	\end{block}
+
+	\begin{block}{\Large First test measurements}
+		\begin{columns}
+			\begin{column}{0.33\columnwidth}
+				\begin{itemize}
+					\item We already see position dependent signals induced by the electron beam
+					\item Have to verify these are induced by near field
+					\item Have to verify these are EPR
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.33\columnwidth}
+				\includegraphics[width=\columnwidth]{./figures/signalsample.png}
+			\end{column}
+			\begin{column}{0.33\columnwidth}
+				\includegraphics[width=\columnwidth]{./figures/signaldependence.png}
+			\end{column}
+		\end{columns}
+	\end{block}
+
 %	\begin{block}{\Large The Quantum Klystron}
 %        % We call our experiment the \textit{Quantum Klystron}, referencing an established
 %        % technology, the Klystron.
@@ -272,6 +407,87 @@
 %%        impedance match that we have to compensate for.
 %%      \end{block}
 %
+	\begin{block}{\Large Our Cryostage}
+		\begin{columns}
+			\begin{column}{0.45\columnwidth}
+				\includegraphics[width=\columnwidth]{./figures/cryostage01.png}
+			\end{column}
+			\begin{column}{0.45\columnwidth}
+				\begin{itemize}
+					\item Lower than eucentric $\to$ larger beam deflection with lower parasitic radiated field
+					\item Allows for cooling with water or liquid nitrogen (signal gain $\approx 4$, SNR gain $\approx 7.7$)
+					\item Sample thermally coupled to stage
+					\item Stage thermally anchored to front door
+					\item Alignment manually via port aligner
+				\end{itemize}
+			\end{column}
+		\end{columns}
+		\vspace{1cm}
+		\begin{columns}
+			\begin{column}{0.45\columnwidth}
+				\begin{itemize}
+					\item Two concentric coils
+					\item Main $B_0$ coil (up to $15 mT$)
+					\item Modulation coil ($\approx 200 \mu T$)
+					\item Largest possible field with working imaging $\approx 30 mT$
+					\item Doing \textit{frequency} scans instead of $B_0$ scans to keep beam position stable
+					\item Coils cooled via thermal coupling to stage
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.45\columnwidth}
+				\includegraphics[width=\columnwidth]{./figures/coilfields.png}	
+			\end{column}
+		\end{columns}
+	\end{block}
+
+	\begin{block}{\Large Microcoil and RF setup}
+		\begin{columns}
+			\begin{column}{0.45\columnwidth}
+%				\includegraphics[width=\columnwidth]{./figures/microcoil2.jpg}
+				\includegraphics[width=\columnwidth]{./figures/microcoil3.png}
+			\end{column}
+			\begin{column}{0.45\columnwidth}
+				\begin{itemize}
+					\item PCB microcoil ($1.7 * 0.5 mm$)
+					\item Resides in center of $B_0$ coil (minimal field inhomogenity)
+					\item Impedance match near coil
+					\item Beam passes aloof
+					\item Faraday cup below the microcoil to measure beamcurrent
+				\end{itemize}
+			\end{column}
+		\end{columns}
+		\vspace{1cm}
+		\begin{columns}
+			\begin{column}{0.45\columnwidth}
+				\begin{itemize}
+					\item AD9959 based 4 channel DDS
+					\item Beam modulation via 2W RF amplifier
+					\item Measuring via LTC5584 I/Q demodulator and Lock-In amplifier
+					\item Fast system control via RP2040 controller
+					\item Python based experimental control system
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.45\columnwidth}
+				\includegraphics[width=\columnwidth]{./figures/rfsetup.png}
+			\end{column}
+		\end{columns}
+	\end{block}
+
+	\begin{block}{\Large Material for proof of principle experiment}
+		\begin{columns}
+			\begin{column}{0.45\columnwidth}
+				\begin{itemize}
+					\item Koelsch radical ($\alpha,\gamma$-Bisdiphenylene-$\beta$-phenylallyl - BDPA; $C_{33}H_{21})$
+					\item high spin density (1 free spin per 51 atoms)
+					\item Same material as in our other EPR experiments (comparability)
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.45\columnwidth}
+				\includegraphics[width=\columnwidth]{./figures/bdpa.png}	
+			\end{column}
+		\end{columns}
+	\end{block}
+
       \begin{block}{\Large References \& Acknowledgements}
         [1] D. Rätzel, D. Hartley, O. Schwartz, P. Haslinger, A Quantum
         Klystron - Controlling Quantum Systems with Modulated Electron Beams.
